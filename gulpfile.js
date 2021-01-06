@@ -1,4 +1,4 @@
-const proxy = "devbase3";
+const proxy = "build";
 
 const gulp = require('gulp');
 const rename = require('gulp-rename');
