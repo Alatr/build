@@ -54,7 +54,7 @@ const paths = {
 		},
 		styles: { 
 				main: './src/assets/styles/main.scss',
-				src: './src/assets/styles/**/*.scss',
+				src: './src/**/*.scss',
 				dest: './dist/assets/styles'
 		},
 		scripts: {
