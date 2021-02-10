@@ -1,7 +1,9 @@
 install:
 	npm install
-insstall:
+create:
 	node src/static/create-component testoviy
+test:
+	console.log
 lint:
 	npx eslint ./src/assets/scripts/**/*.js ./src/assets/scripts/*.js ./src/pug/components/**/*.js
 lint-w:

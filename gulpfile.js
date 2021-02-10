@@ -61,8 +61,9 @@ const paths = {
     },
 		styles: { 
 				main: './src/assets/styles/main.scss',
-				importsFiles: 'src/assets/styles/assets/templates.scss',
-				stylesPages: 'src/assets/styles/pages',
+				importsFiles: './src/assets/styles/assets/templates.scss',
+        stylesPages: './src/assets/styles/pages',
+        // src\assets\styles\pages
 				src: './src/**/*.scss',
 				dest: './dist/assets/styles'
 		},
@@ -125,7 +126,7 @@ function watch() {
 // creater templates scss
 
 function watchScssTemplates() {
-    scssTemplateCreater();
+  scssTemplateCreater();
     return gulp.src(paths.templates.pages);
         // .pipe(gulp.dest(paths.root));
 }
@@ -136,7 +137,7 @@ function scssTemplateCreater() {
     const filesNameWithoutExt =  nameFiles.map(el => el.replace(/\.scss/g, ''));
     const contentImportsFiles =  filesNameWithoutExt.reduce((acc, el) => acc += `@import './pages/${el}';\n`, ``);
     
-    fs.writeFile(contentImportsFiles, paths.styles.importsFiles, null, ()=>{});
+    fs.writeFile(paths.styles.importsFiles, contentImportsFiles,  null, ()=>{});
   });
   
 };
