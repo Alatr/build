@@ -1,3 +1,5 @@
+"use strict";
+
 const proxy = "build";
 let webPackSetting = true;
 let typeScriptSetting = false;

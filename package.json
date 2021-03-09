@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "work builder",
   "main": "index.js",
-  "scripts": {},
   "browserslist": [
     "last 3 version"
   ],
   "engines": {
     "node": ">=14"
+  },
+  "scripts": {
+    "test": "npx jest"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "keywords": [],
   "author": "Dmitriy Lukianov",
@@ -25,6 +30,7 @@
     ]
   },
   "devDependencies": {
+    "@jest/globals": "^26.6.2",
     "@typescript-eslint/eslint-plugin": "^3.9.0",
     "@typescript-eslint/parser": "^3.9.0",
     "autoprefixer": "^8.6.0",
@@ -65,6 +71,8 @@
     "husky": "^1.1.2",
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-pngquant": "^8.0.0",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
     "lint-staged": "^7.3.0",
     "merge-stream": "^2.0.0",
     "path": "^0.12.7",
@@ -81,6 +89,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "babel-preset-es2015": "^6.24.1",
     "bezier-easing": "^2.1.0",
     "gsap": "^3.5.1",
     "i18next": "^19.8.4",

@@ -3,7 +3,7 @@ install:
 create:
 	node src/static/create-component testoviy
 test:
-	console.log
+	npm test
 lint:
 	npx eslint ./src/assets/scripts/**/*.js ./src/assets/scripts/*.js ./src/pug/components/**/*.js
 lint-w:

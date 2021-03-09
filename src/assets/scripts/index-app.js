@@ -64,3 +64,11 @@ const locoScroll = new LocomotiveScroll({
  * form handlers end
  */
 /** ******************************* */
+
+
+// import { test, expect } from '@jest/globals';
+
+// import fs from 'fs';
+// import { fileURLToPath } from 'url';
+// import path from 'path';
+// // import gendiff from '../src/index.js';
